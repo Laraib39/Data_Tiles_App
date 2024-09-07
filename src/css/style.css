@@ -1,0 +1,157 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #acbfe6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+.hamburger-menu, .horizontal-menu {
+  padding: 15px 20px;
+  background-color: #7da2a9 !important;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-items, .horizontal-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.horizontal-menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.horizontal-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.horizontal-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Tile Grid */
+.grid-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px; */
+  padding: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Card Tile */
+.tile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #acbfe6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tileCard:hover {
+  background-color: #6688cc;
+}
+
+.tileCard:hover .MuiTypography-h5,
+.tileCard:hover .MuiTypography-body2,
+.tileCard:hover .MuiTypography-p,
+.tileCard:hover .tile-icons svg,
+.tileCard:hover .flag-icon {
+  color: whitesmoke;
+}
+
+.flagged {
+  color: #182978 !important; /* Keep flagged color */
+}
+/* Expanded Tile */
+.tile-expanded {
+  margin-top: 10px;
+  background-color: #fafafa;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.MuiTextField-root {
+  margin: 2% !important;
+}
+
+/* Button Styles */
+.closeButton {
+  font-size: 14px;
+  padding: 8px 16px;
+  border: none !important;
+  border-radius: 4px;
+  color: white !important;
+  background-color: #182978 !important;
+  transition: background-color 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: #acbfe6;
+}
+
+/* Button Group Styling */
+.MuiButtonGroup-root {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.MuiButton-root {
+  color: #182978;
+  background-color: #182978;
+}
+
+/* .MuiButton-root:hover {
+  color: white;
+  background-color: #182978;
+} */
+
+/* Typography Styling */
+.MuiTypography-h5 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.MuiTypography-body2 {
+  color: #666;
+}
+
+/* Icon Styling */
+.MuiButton-icon {
+  margin-right: 8px;
+}
+
+.tile-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+
+.tile-icons svg {
+  margin: 0 8px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tile-icons svg:hover {
+  color: #7da2a9;
+}

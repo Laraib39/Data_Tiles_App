@@ -1,70 +1,158 @@
-# Getting Started with Create React App
+# Data_Tiles_App
+(Skill Test)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web-based application that displays user information in tile format inside a Grid. Users can expand tiles to view details, edit user information, flag users, and delete them. The app uses React for building the interface and managing interactions.
 
-## Available Scripts
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Commands](#commands)
+- [Screenshots](#screenshots)
+- [Deployment](#deployment)
+- [License](#license)
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+The **Data Tiles App** allows users to view and manage a list of users. When a tile is clicked, the user’s details are expanded, and an option to edit the user information appears when the edit icon is clicked. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project showcases basic React concepts like component-based architecture, state management, event handling, and conditional rendering. It is also integrated with GitHub Pages for deployment.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Horizontal Menu**: It serves as the navigation bar for the app (please note that the navlinks are not functional since it is the test task).
+- **Hamburger Menu**: Displays some menus from the left hand side.
+- **Tile View**: Each user’s information is displayed in tile format.
+- **Grid View**: The tiles are arranged in a Grid format.
+- **Expanded View**: Clicking on a tile expands it to show more details.
+- **Edit Functionality**: Clicking the "Edit" button enables editing the user’s details.
+- **Flag and Delete**: Users can be flagged for review or deleted from the list.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Key Technologies
 
-### `npm run build`
+1. React.js: Used for handling the UI and interactivity.
+2. CSS3: Used for responsive design and stylings.
+3. JavaScript (ES6): Implements logic for expanding views, editing forms, and managing states.
+4. Material UI: Used for adding pre-built components for styled view of the user interface.
+5. JSONPlaceholder (Public RESTful API): Used to get the data for the user tiles.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+/src
+|-- /components
+    |-- HamburgerMenu.js        # Displays menus from the left hand side
+    |-- HorizontalMenu.js       # Displays nav links in horizontal navbar
+    |-- GridView.js             # Displays all the tiles in a Grid layout
+    |-- TileView.js             # Displays users' precise information in a tile layout
+    |-- ExpandedView.js         # Shows detailed view of a users
+    |-- EditView.js             # Handles editing of users' information
+|-- /css
+    |-- styles.css         # Application-wide styling
+|-- App.js                 # Main entry point for the app
+|-- index.js               # Renders the app into the DOM
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Component Breakdown
+### GridView.js:
+This component simply displays all the tiles in beautiful Grid layout. where all the tiles are arranges in order according to the data retrieved from the public API.
 
-### `npm run eject`
+### HamburgerMenu.js:
+When the user clicks the hamburger menu icon it shows up the menu list from the left hand side of the page with one menu having sub-menu. These menus are not worked upon them in detail for now, such that they don't let the user to navigate to another page of the app.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### HorizontalMenu.js:
+This menu allows the users to view and navigate through the various pages of the app. The navlinks include Home, Services, Portfolio, About Us, and Contact among which the Services link has sub-menus when it is clicked. This section of the app is limited to its appearance part only since it's whole functionality was not required for the skill test.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### TileView.js: 
+This component displays a summary of each user (name, username, and email) which is the data obtained from JSONPlaceholder API. Clicking on a user's tile reveals an expanded view or triggers the edit mode depending on user interaction.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ExpandedView.js: 
+When the tile is clicked, it expands to show additional user details such as address, phone number, and website. This component renders conditionally based on the state in the TileView.js.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### EditView.js: 
+On clicking the Edit button in the tile, this component renders a form to modify the contact details. It includes input fields for the name, email, and other details, as well as validation logic. You can submit the form, which updates the user's details.
 
-## Learn More
+### Actions (Edit, Flag, Delete): 
+Each user tile has buttons for editing, flagging as important, or deleting the user. The delete functionality removes the user tile from the tile grid, and the flag action marks important contacts for easy identification.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Known Issue:
+The app might have a minor UI rendering issue on the initial load where the layout does not appear as expected until a tile is clicked. This could be related to the CSS or JavaScript that handles the initial rendering.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation
+### Prerequisites
+To run this application locally, you need to have the following installed:
 
-### Code Splitting
+1. Node.js
+2. npm (or yarn)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To set up the project locally, follow these steps:
 
-### Analyzing the Bundle Size
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Laraib39/Data_Tiles_App.git
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Navigate to the project directory:
+    ```bash
+    cd my-tileview-app
+    ```
 
-### Making a Progressive Web App
+3. Install the necessary dependencies:
+    ```bash
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Usage
 
-### Advanced Configuration
+1. Run the development server:
+    ```bash
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Open your browser and visit:
+    ```
+    http://localhost:3000
+    ```
 
-### Deployment
+You can now view the app in your browser, where you can click on any tile to expand its details, edit user information, flag users, or delete them.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Commands
 
-### `npm run build` fails to minify
+- `npm start`: Starts the development server.
+- `npm run build`: Builds the production-ready version of the app.
+- `npm run deploy`: Deploys the app to GitHub Pages (if configured).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+
+![Web page's Initial UI](https://drive.google.com/file/d/178IatqhYWV6XmsiDVKfcnHbt6YIPP9QU/view?usp=sharing)
+*Web page's Initial UI with all the tiles in Grid Format*
+
+![Expanded Hamburger Menu](https://drive.google.com/file/d/1y50e54bGeeW2iU3JjJVXw6aPKK9033VF/view?usp=sharing)
+*Expanded Hamburger Menu with all the Menu items*
+
+![Expanded View of the User Tile](https://drive.google.com/file/d/1uCrLTCGZrp91FkpBhHA1Y1YZtDYyjFVh/view?usp=sharing)
+*Expanded View of the User Tile with few more user details*
+
+![Edit View of User Tile](https://drive.google.com/file/d/18pzjrmV4ou0nDewA8WXYvG3PUn8ZuY9R/view?usp=sharing)
+*Edit View of User Tile to modify user details*
+
+## Deployment
+
+This app is hosted using GitHub Pages. To deploy the app:
+
+1. Ensure your `package.json` has the correct `homepage` field:
+    ```json
+    "homepage": "https://Laraib39.github.io/Data_Tiles_App",
+    ```
+
+2. Build the app for production:
+    ```bash
+    npm run build
+    ```
+
+3. Deploy it to GitHub Pages:
+    ```bash
+    npm run deploy
+    ```
+
+After deployment, the app will be available at:
+https://Laraib39.github.io/Data_Tiles_App

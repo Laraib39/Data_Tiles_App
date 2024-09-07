@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "username": "johndoe",
+      "email": "john.doe@example.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "New York"
+      },
+      "phone": "555-555-5555",
+      "company": {
+        "name": "Example Corp"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "username": "janesmith",
+      "email": "jane.smith@example.com",
+      "address": {
+        "street": "456 Maple Ave",
+        "city": "Los Angeles"
+      },
+      "phone": "555-123-4567",
+      "company": {
+        "name": "Tech Solutions"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "username": "alicej",
+      "email": "alice.johnson@example.com",
+      "address": {
+        "street": "789 Oak St",
+        "city": "Chicago"
+      },
+      "phone": "555-987-6543",
+      "company": {
+        "name": "Global Industries"
+      }
+    }
+  ]
+  

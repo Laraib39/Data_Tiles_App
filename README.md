@@ -123,16 +123,16 @@ You can now view the app in your browser, where you can click on any tile to exp
 
 ## Screenshots
 
-![Web page's Initial UI](https://drive.google.com/file/d/178IatqhYWV6XmsiDVKfcnHbt6YIPP9QU/view?usp=sharing)
+![Web page's Initial UI]https://drive.google.com/file/d/178IatqhYWV6XmsiDVKfcnHbt6YIPP9QU/view?usp=sharing
 *Web page's Initial UI with all the tiles in Grid Format*
 
-![Expanded Hamburger Menu](https://drive.google.com/file/d/1y50e54bGeeW2iU3JjJVXw6aPKK9033VF/view?usp=sharing)
+![Expanded Hamburger Menu]https://drive.google.com/file/d/1y50e54bGeeW2iU3JjJVXw6aPKK9033VF/view?usp=sharing
 *Expanded Hamburger Menu with all the Menu items*
 
-![Expanded View of the User Tile](https://drive.google.com/file/d/1uCrLTCGZrp91FkpBhHA1Y1YZtDYyjFVh/view?usp=sharing)
+![Expanded View of the User Tile]https://drive.google.com/file/d/1uCrLTCGZrp91FkpBhHA1Y1YZtDYyjFVh/view?usp=sharing
 *Expanded View of the User Tile with few more user details*
 
-![Edit View of User Tile](https://drive.google.com/file/d/18pzjrmV4ou0nDewA8WXYvG3PUn8ZuY9R/view?usp=sharing)
+![Edit View of User Tile]https://drive.google.com/file/d/18pzjrmV4ou0nDewA8WXYvG3PUn8ZuY9R/view?usp=sharing
 *Edit View of User Tile to modify user details*
 
 ## Deployment
